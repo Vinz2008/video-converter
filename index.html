@@ -10,14 +10,30 @@
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">WebSiteName</a>
+              <a class="navbar-brand" href="#">Video Converter</a>
             </div>
             <ul class="nav navbar-nav">
 
     </nav>
 <h1>Video converter</h1>
-<video id="output-video" controls></video><br/> 
-<input type="file" id="uploader"> 
+
+<label for="format-selector-label1">Choose a format to convert from:</label>
+<select name="format-selection1" id="format-selection1">
+<option value="mkv-1">Mkv</option>
+<option value="webm-1">Webm</option>
+<option value="mp4-1">Mp4</option>
+</select>
+<br>
+<br>
+<label for="format-selector-label2">Choose a format to convert to:</label>
+<select name="format-selection2" id="format-selection2">
+<option value="mkv-2">Mkv</option>
+<option value="mp4-2">Mp4</option>
+</select>
+<br>
+<br>
+<input type="file" id="uploader">
+ 
 <button onClick="cancel()">Cancel</button>
 <br>
 <br>
@@ -25,6 +41,7 @@
 <button> Download</button>
 </a>
 <p id="message"></p> 
+<video hidden id="output-video" controls></video><br/> 
 <script src="main.js"></script>
 </body>
 </html>

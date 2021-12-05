@@ -1,4 +1,14 @@
-.container-fluid {
+body {
+    background-color: #FBFBFB;
+}
+
+nav {
+    height: 3em;
     box-sizing: border-box;
     box-shadow: 0 1px 0 0 rgb(17 17 17 / 7%);
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+    font-size: 1.4em;
 }
